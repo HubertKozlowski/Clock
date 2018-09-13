@@ -59,7 +59,6 @@ section:after {
     background: #000;
 		left: 45%;
     position: absolute;
-    z-index: 2;
 }
 
 .minutehand:after {
@@ -117,7 +116,7 @@ section:after {
     width: 350px;
     height: 5px;
     box-shadow: -10px -10px 10px rgba(0,0,0,.4);
-		/* animation: rotate 60s infinite steps(60); */
+		animation: rotate 60s infinite steps(60);
 
 }
 
