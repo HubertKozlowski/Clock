@@ -1,5 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+import "../css/normalize.css";
+import "../css/style.css";
 
+document.addEventListener("DOMContentLoaded", function() {
 
 function initLocalClocks() {
   var date = new Date;
