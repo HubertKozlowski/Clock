@@ -1,5 +1,11 @@
 require('../css/style.css');
 
+$(document).ready(function() {
+		initLocalClocks();
+		setUpMinuteHands();
+		moveSecondHands();
+})
+
 function initLocalClocks() {
   var date = new Date;
   var seconds = date.getSeconds();
@@ -82,8 +88,3 @@ function moveSecondHands() {
 
 	  }, 1000);
 }
-
-
-initLocalClocks();
-setUpMinuteHands();
-moveSecondHands();
