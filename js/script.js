@@ -24,19 +24,19 @@ function initLocalClocks() {
     }
   ];
 
-	for (var i = 0; i < hands.length; i++) {
-		var elements = document.querySelectorAll('.' + hands[i].hand);
+  for (var i = 0; i < hands.length; i++) {
+    var elements = document.querySelectorAll('.' + hands[i].hand);
 
-		for (var j = 0; j < elements.length; j++) {
-			elements[j].style.webkitTransform = 'rotateZ('+ hands[i].angle +'deg)';
-			elements[j].style.transform = 'rotateZ('+ hands[i].angle +'deg)';
+    for (var j = 0; j < elements.length; j++) {
+      elements[j].style.webkitTransform = 'rotateZ('+ hands[i].angle +'deg)';
+      elements[j].style.transform = 'rotateZ('+ hands[i].angle +'deg)';
 
-			if (hands[i].hand === 'minutehand') {
-      	elements[j].parentElement.setAttribute('data-second-angle', hands[i + 1].angle);
+      if (hands[i].hand === 'minutehand') {
+        elements[j].parentElement.setAttribute('data-second-angle', hands[i + 1].angle);
       }
 
-		}
-	}
+    }
+  }
 }
 
 function setUpMinuteHands() {
@@ -44,9 +44,9 @@ function setUpMinuteHands() {
   var secondAngle = container.getAttribute("data-second-angle");
   if (secondAngle > 0) {
     var delay = (((360 - secondAngle) / 6) + 0.1) * 1000;
-    setTimeout(function() {
-    	moveMinuteHands(container);
-    }, delay);
+      setTimeout(function() {
+        moveMinuteHands(container);
+      }, delay);
   }
 }
 
@@ -58,9 +58,9 @@ function moveMinuteHands(containers) {
   setInterval(function() {
 
     if (containers.angle === undefined) {
-    	containers.angle = 12;
+      containers.angle = 12;
     } else {
-    	containers.angle += 6;
+      containers.angle += 6;
     }
     containers.style.webkitTransform = 'rotateZ('+ containers.angle +'deg)';
     containers.style.transform = 'rotateZ('+ containers.angle +'deg)';
@@ -73,9 +73,9 @@ function moveSecondHands() {
   setInterval(function() {
 
     if (container.angle === undefined) {
-    	container.angle = 6;
+      container.angle = 6;
     } else {
-    	container.angle += 6;
+      container.angle += 6;
     }
 
     container.style.webkitTransform = 'rotateZ('+ container.angle +'deg)';

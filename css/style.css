@@ -1,7 +1,7 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 section {
@@ -145,32 +145,32 @@ section:after {
 
 
 .hour3 {
-	left: 6%;
-	transform: rotate(90deg);
+  left: 6%;
+  transform: rotate(90deg);
 }
 
 .hour1 {
-	left: 6%;
-	transform: rotate(120deg);
+  left: 6%;
+  transform: rotate(120deg);
 }
 
 .hour2 {
-	left: 6%;
-	transform: rotate(150deg);
+  left: 6%;
+  transform: rotate(150deg);
 }
 
 .hour4 {
-	left: 6%;
-	transform: rotate(210deg);
+  left: 6%;
+  transform: rotate(210deg);
 }
 
 .hour5 {
-	left: 6%;
-	transform: rotate(240deg);
+  left: 6%;
+  transform: rotate(240deg);
 }
 
 @keyframes rotate {
   100% {
-	   transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
