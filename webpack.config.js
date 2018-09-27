@@ -1,7 +1,7 @@
 var path = require("path");
 var Html = require('html-webpack-plugin');
 var MiniCSS = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(env) {
   const isDev = env && env.dev ? true : false;

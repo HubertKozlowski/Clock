@@ -90,4 +90,4 @@ initLocalClocks();
 moveSecondHands();
 setUpMinuteHands();
 
-})
+});
